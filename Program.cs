@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 
+//Problem 1
 Stack<int> intStack = new Stack<int>();
 
 intStack.Push(1);
@@ -22,4 +23,30 @@ while (intStack.Count > 0) {
 
 Console.WriteLine(String.Join(",", sumStack.Reverse()));
 
+//Problem 2
 
+string [] words = {"lean", "cat", "lane", "tab", "angel", "angle"};
+
+int anagramCount() {
+    int count = 0;
+    List<string>newWords = words.ToList();
+    HashSet<string>anagrams = new HashSet<string>();
+    foreach(string word in newWords) {
+
+        char[] w = word.ToCharArray();
+        Array.Sort(w);
+        string sortWord = new string(w);
+        Console.WriteLine(sortWord);
+        anagrams.Add(sortWord);
+    }
+
+    
+    Console.WriteLine(string.Join(",", anagrams));
+
+    count = newWords.Count - anagrams.Count;
+
+
+    return count;
+}
+
+Console.WriteLine($"Total anagram count: {anagramCount()}");
