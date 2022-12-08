@@ -1,6 +1,6 @@
 # Unit 1: Stacks
 
-Imagiane that you are washing dirty plates that have been left in the sink. You wash one plate, and then set it to the side. After you wash each subsequent plate, you put it on top of the previously washed one. Pretty soon, you have a stack of clean plates.
+Imagine that you are washing dirty plates that have been left in the sink. You wash one plate, and then set it to the side. After you wash each subsequent plate, you put it on top of the previously washed one. Pretty soon, you have a stack of clean plates.
 
 In programming, we use a data structure called a stack to store data the same way we would those plates, one on top of the next.
 
@@ -31,11 +31,11 @@ And here is an example of what the code might look like to create a stack:
   //The stack is now back to {1, 2, 3, 4}
 ```
 
-| **Operator** |                 **Description**                 | **Code**          |
-| ------------ | :---------------------------------------------: | ----------------- |
-| Push         | Will add a new item to the back or top of stack | stack.Push(value) |
-| Pop          | Will remove the item from the back of the stack | stack.Pop()       |
-| Peek         |  Will return the item at the top of the stack   | stack.Peek()      |
+| Operator |                   Description                   | Code              | Performance |
+|----------|:-----------------------------------------------:|-------------------|-------------|
+| Push     | Will add a new item to the back or top of stack | stack.Push(value) | O(1)        |
+| Pop      | Will remove the item from the back of the stack | stack.Pop()       | O(1)        |
+| Peek     | Will return the item at the top of the stack    | stack.Peek()      | O(1)        |
 
 ## Example
 

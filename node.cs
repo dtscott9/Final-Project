@@ -44,6 +44,24 @@ public class Node {
         }
         return false;
     }
+
+    public int GetHeight() {
+        // TODO Start Problem 4
+
+        int rHeight = 0;
+        int lHeight = 0;
+        
+        if (Left is not null)
+        {
+            lHeight = Left.GetHeight();
+        }
+
+        if (Right is not null)
+        {
+            rHeight = Right.GetHeight();
+        }
+        return 1+ Math.Max(rHeight, lHeight);
+    }
 }
 
 public class BinarySearchTree : IEnumerable<int>{
@@ -85,4 +103,11 @@ public class BinarySearchTree : IEnumerable<int>{
         }
     }
 
+    public int GetHeight() {
+        if (_root is null)
+            return 0;
+        return _root.GetHeight();
+    }
+
 }
+ 

@@ -60,7 +60,7 @@ public class BinarySearchTree {
 }
 ```
 
-The Binary Search Tree insert method uses the node insert method, however it first checks to see if the root node contains a value. If no value is found, the value will be inserted into the root. In order to traverse through the tree, we need to make use of the IEnumerable<int> interface
+The Binary Search Tree insert method uses the node insert method, however it first checks to see if the root node contains a value. If no value is found, the value will be inserted into the root. In order to traverse through the tree, we need to make use of the IEnumerable<int> interface. The traverse forward method uses recursion (which means calling the function within the same funciton) to go through the tree checking both the right and left sides. 
 
 ```csharp
 
@@ -105,7 +105,7 @@ public class BinarySearchTree {
 
 # Problem to Solve
 
-Given an array of strings, find all of the anagrams and return an int that represents the anagram count.
+Create a function that returns the height of the tree. The height of the entire tree is defined as the height of the taller subtree plus 1 (the plus 1 is for the root node).
 
 [Solution](Program.cs)
 

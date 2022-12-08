@@ -8,11 +8,11 @@ Instead of using a list or a stack to store this data, you could use a set. Sets
 
 Sets are similar to stacks in that you can add and remove from them. However, you are not tied to taking or adding to the back of a set. When you add to a set the value will be added to the end of the set, however you can remove a value from any index in a set. If you want to check to see if a set contains a certain value by using the constains method. 
 
-| **Operator** |              **Description**              | **Code**          |
-|--------------|:-----------------------------------------:|-------------------|
-| Add          | Will add a new value to the set           | set.Add(value)    |
-| Remove       | Will remove a specified value from a set  | set.Remove(value) |
-| Count        | Will return the number of values in a set | set.Count         |
+| Operator |                Description                | Code              | Performance |
+|----------|:-----------------------------------------:|-------------------|-------------|
+| Add      | Will add a new value to the set           | set.Add(value)    | O(1)        |
+| Remove   | Will remove a specified value from a set  | set.Remove(value) | O(1)        |
+| Count    | Will return the number of values in a set | set.Count         | O(1)        |
 
 Two other operators include include intersection and union, but these operators are used when comparing to sets. Intersection will return whichever values the two sets have in common, and union will combine the two sets but without any duplicates. Below is an example of what this may look like:
 

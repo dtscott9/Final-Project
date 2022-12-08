@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 
-//Problem 1
+using module_3;
+
+
+Console.WriteLine("\n=========== PROBLEM 1===========");
 Stack<int> intStack = new Stack<int>();
 
 intStack.Push(1);
@@ -23,7 +26,7 @@ while (intStack.Count > 0) {
 
 Console.WriteLine(String.Join(",", sumStack.Reverse()));
 
-//Problem 2
+Console.WriteLine("\n=========== PROBLEM 2 ===========");
 
 string [] words = {"lean", "cat", "lane", "tab", "angel", "angle"};
 
@@ -50,3 +53,17 @@ int anagramCount() {
 }
 
 Console.WriteLine($"Total anagram count: {anagramCount()}");
+
+Console.WriteLine("\n=========== PROBLEM 3 ===========");
+
+BinarySearchTree tree = new BinarySearchTree();
+
+tree.Insert(7);
+tree.Insert(5);
+tree.Insert(6);
+tree.Insert(8);
+tree.Insert(9);
+tree.Insert(4);
+tree.Insert(10);
+
+Console.WriteLine(tree.GetHeight());
